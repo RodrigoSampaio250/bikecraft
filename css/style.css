@@ -1,0 +1,133 @@
+@import "../css/global.css";
+@import "../css/header.css";
+@import "../css/intro.css";
+@import "../css/reutilizaveis.css";
+@import "../css/bicicletas.css";
+@import "../css/tecnologia.css";
+@import "../css/parceiros.css";
+@import "../css/depoimento.css";
+@import "../css/seguros.css";
+@import "../css/footer.css";
+
+:root {
+    /* Cores em escala de cinza */
+    --c12: #000000;
+    --c11: #111111;
+    --c10: #2E2E2E;
+    --c9: #404040;
+    --c8: #595959;
+    --c7: #717171;
+    --c6: #9C9C9C;
+    --c5: #B2B2B2;
+    --c4: #CCCCCC;
+    --c3: #DEDEDE;
+    --c2: #EDEDED;
+    --c1: #F7F7F7;
+    --w: #FFFFFF;
+
+    /* Cores em tons de amarelo e marrom */
+    --p5: #332200;
+    --p4: #664400;
+    --p3: #A66F00;
+    --p2: #E4A30B;
+    --p1: #FFBB00;
+
+    /* Tipografia */
+    --font-primary: 'Poppins', sans-serif;
+    --font-secondary: 'Roboto', sans-serif;
+
+    /* Espaçamentos */
+    --space-004: 4px;
+    --space-008: 8px;
+    --space-012: 12px;
+    --space-016: 16px;
+    --space-020: 20px;
+    --space-024: 24px;
+    --space-032: 32px;
+    --space-036: 36px;
+    --space-040: 40px;
+    --space-048: 48px;
+    --space-060: 60px;
+    --space-072: 72px;
+    --space-080: 80px;
+    --space-120: 120px;
+    --space-160: 160px;
+    --space-200: 200px;
+}
+.c12 { color: var(--c12); }
+.c11 { color: var(--c11); }
+.c10 { color: var(--c10); }
+.c9 { color: var(--c9); }
+.c8 { color: var(--c8); }
+.c7 { color: var(--c7); }
+.c6 { color: var(--c6); }
+.c5 { color: var(--c5); }
+.c4 { color: var(--c4); }
+.c3 { color: var(--c3); }
+.c2 { color: var(--c2); }
+.c1 { color: var(--c1); }
+.w  { color: var(--w); }
+
+.p5 { color: var(--p5); }
+.p4 { color: var(--p4); }
+.p3 { color: var(--p3); }
+.p2 { color: var(--p2); }
+.p1 { color: var(--p1); }
+
+
+.footer-bg{
+    background-color: var(--c12);
+}
+.footer{
+    display: grid;
+    grid-template-columns: 3fr 5fr 4fr;
+    gap: 40px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.footer h3{
+    margin-bottom: 32px;
+}
+.footer-contato ul{
+    margin-bottom: 32px;
+}
+.footer-contato li:nth-child(even)::after{
+    content: "";
+    display: block;
+    max-width: 350px;
+    height: 2px;
+    background: var(--c11);
+    margin-top: 16px;
+}
+.footer li{
+    margin-bottom: 16px;
+}
+.footer-redes{
+    display: flex;
+    gap: 32px;
+}
+.footer a:hover{
+    color: var(--w);
+}
+.footer-copy{
+    grid-column: 1/-1;
+    margin-top: 40px;
+}
+
+@media (max-width: 800px){
+    .footer > img{
+        display: none;
+    }
+    .footer{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (max-width: 600px){
+    .footer{
+        grid-template-columns: 1fr;
+        gap: 60px;
+    }
+    .footer-copy{
+        margin-top: 0px;
+    }
+}
