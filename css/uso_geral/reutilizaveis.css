@@ -11,6 +11,8 @@
     font-family: "Poppins";
     font-weight: 600;
     max-width: max-content;
+    border: none;
+    cursor: pointer;
 }
 .botao:hover{
     background: linear-gradient(var(--p2),var(--p3));
@@ -44,7 +46,7 @@
   box-sizing: border-box;
   max-width: 1200px;
   margin-right: auto;
-  margin-left: auto;
+  /* margin-left: auto; */
   padding-left: 20px;
   padding-right: 20px;
   margin-left: 12px;
@@ -138,7 +140,15 @@
 .titulo p{
   margin-bottom: 4px;
 }
+.titulo{
+  background: url(../../img/dec/top-right.svg) no-repeat top right 20px;
+}
 
+@media (min-width: 1201px){
+  .conteiner{
+    max-width: none;
+  }
+}
 @media (max-width: 1200px) {
   .font-1-xxl {
     font-size: 3rem;

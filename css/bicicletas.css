@@ -54,6 +54,7 @@ display: block;
     gap: 40px;
     padding-top: 60px;
     padding-bottom: 60px;
+    background: url(../img/dec/top-right.svg) no-repeat top 40px right 20px;
 }
 .bike-img{
     position: relative;
@@ -103,7 +104,13 @@ display: block;
 .bike ul img{
     width: 24px;
 }
-@media(min-width:1200px){
+
+.bicicleta{
+    background-color: var(--c11);
+    margin-left: auto;
+}
+
+@media (min-width:1200px){
     #Bike{
         display: flex;
         flex-direction: column;

@@ -1,14 +1,22 @@
-@import "../css/global.css";
-@import "../css/header.css";
+@import "../css/uso_geral/global.css";
+@import "../css/uso_geral/header.css";
 @import "../css/intro.css";
-@import "../css/reutilizaveis.css";
+@import "../css/uso_geral/reutilizaveis.css";
 @import "../css/bicicletas.css";
 @import "../css/tecnologia.css";
 @import "../css/parceiros.css";
 @import "../css/depoimento.css";
 @import "../css/seguros.css";
-@import "../css/footer.css";
+@import "../css/uso_geral/footer.css";
 @import "../css/termos/termo.css";
+@import "../css/vantagem.css";
+@import "../css/perguntas.css";
+@import "../css/bike/bicicleta.css";
+@import "../css/seguro.css";
+@import "../css/contato/contato.css";
+@import "../css/contato/loja.css";
+@import "../css/uso_geral/formulario.css";
+@import "../css/orcamento.css";
 
 :root {
     /* Cores em escala de cinza */
@@ -74,5 +82,3 @@
 .p3 { color: var(--p3); }
 .p2 { color: var(--p2); }
 .p1 { color: var(--p1); }
-
-
